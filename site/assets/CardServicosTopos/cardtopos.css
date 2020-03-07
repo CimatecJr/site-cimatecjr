@@ -1,0 +1,577 @@
+@import url("zeratags.css");
+@import url("fontface.css");
+@import url("hack-IE.css");
+
+/*----------| Body e classses gerais |----------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+dt {
+    font-family: "exo_2.0bold";
+    line-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+h1,
+.alt {
+    overflow: hidden;
+    text-indent: -9000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 140%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*-- Geral --*/
+
+section {
+    padding: 3% auto 0px auto;
+    max-width: auto;
+    margin: 0px auto 0px auto;
+    align-content: center;
+}
+
+section h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: /*20px*/
+    60px 0 40px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    -ms-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+section h4 {
+    font-size: 1.75em;
+    text-align: center;
+    line-height: 100%;
+    display: block;
+    color: #55a7b3;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    -webkit-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    -ms-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+section h4.tit-politica {
+    margin: 30px 0 10px 0;
+    text-align: left;
+}
+
+section .bgFullSize {
+    padding: 0px 0;
+}
+
+section article {
+    width: auto;
+    margin-bottom: 65px;
+    margin-left: 8.5%;
+}
+
+@media screen and (max-width: 64em) {
+    section {
+        float: left;
+        /* margin-bottom: 20px; */
+        padding: 20px 0 0 0;
+    }
+    section h3 {
+        font-size: 2em;
+    }
+    section h4.tit-politica {
+        text-align: center;
+    }
+}
+
+.grid-container {
+    display: -ms-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 0px;
+}
+
+
+/* Serviços */
+
+#Servicos div#Bloco_hovAzul {
+    width: 240px;
+    /*width: 18%;*/
+    height: 340px;
+    /*padding: 0 30px 30px 30px;*/
+    /*	padding: 20px 1% 20px 1%;*/
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /*margin: 40px 20px 40px 20px;*/
+    margin-left: 3.5% !important;
+    margin-right: 3.5% !important;
+    background-color: rgba(182, 182, 182, 0.979);
+    border-radius: 10%;
+}
+
+#Servicos div#Bloco_hovVerm {
+    width: 240px;
+    /*width: 24%;
+	height:400px;
+	*/
+    /*width: 18%;*/
+    height: 340px;
+    /*padding: 0 30px 30px 30px;*/
+    /*padding: 20px 1% 20px 1%;*/
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /*margin: 40px 20px 40px 20px;*/
+    margin-left: 3.5% !important;
+    margin-right: 3.5% !important;
+    background-color: rgba(182, 182, 182, 0.979);
+    border-radius: 10%;
+}
+
+#Servicos div#Bloco_hovAzul:hover {
+    transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+    -ms-transition: background-color 0.5s ease-out;
+    background-color: rgba(70, 130, 180, 0.808);
+    color: #052e56 !important;
+}
+
+#Servicos div#Bloco_hovVerm:hover {
+    transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+    -ms-transition: background-color 0.5s ease-out;
+    background-color: rgba(205, 35, 35, 0.808);
+    color: #052e56 !important;
+}
+
+#Servicos div#Bloco_hovAzul:nth-child(3n+4) {
+    margin-right: 0px;
+}
+
+#Servicos div#Bloco_hovVerm:nth-child(3n+4) {
+    margin-right: 0px;
+}
+
+#Servicos h4 {
+    position: relative;
+    top: -40px;
+    text-shadow: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+}
+
+#Servicos h4 span {
+    background-color: #fff;
+    width: 145px;
+    height: 145px;
+    margin: 0px auto 20px auto;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    display: block;
+}
+
+#Servicos p {
+    font-size: 0.937em;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../../fonts/OpenSans-Light.ttf");
+}
+
+#Servicos h4.color001 {
+    color: #26c9ff;
+}
+
+#Servicos h4.color001 span {
+    background-color: #26c9ff;
+}
+
+#Servicos h4.colorRed {
+    color: rgba(205, 35, 35, 1);
+    font-family: "OpenSans-Light";
+    font-size: 1.5rem;
+}
+
+#Servicos h4.colorRed span {
+    background-color: rgba(205, 35, 35, 1);
+}
+
+#Servicos h4.colorBlue {
+    color: rgba(70, 130, 180, 1);
+    font-family: "OpenSans-Light";
+    font-size: 1.5rem;
+}
+
+#Servicos h4.colorBlue span {
+    background-color: rgba(70, 130, 180, 1);
+}
+
+#Servicos h4.color002 {
+    color: #ffdc73;
+}
+
+#Servicos h4.color002 span {
+    background-color: #ffdc73;
+}
+
+#Servicos h4.color003 {
+    color: #00b2b2;
+}
+
+#Servicos h4.color003 span {
+    background-color: #00b2b2;
+}
+
+#Servicos h4.color004 {
+    color: #ff7373;
+}
+
+#Servicos h4.color004 span {
+    background-color: #ff7373;
+}
+
+#Servicos div#Bloco_hovAzul:hover h4 {
+    color: #052e56;
+}
+
+#Servicos div#Bloco_hovVerm:hover h4 {
+    color: #052e56;
+}
+
+#Servicos div#Bloco_hovAzul:hover span {
+    transition: margin-top 0.3s ease-out;
+    -moz-transition: margin-top 0.3s ease-out;
+    -webkit-transition: margin-top 0.3s ease-out;
+    -ms-transition: margin-top 0.3s ease-out;
+    margin-top: -10px;
+}
+
+#Servicos div#Bloco_hovVerm:hover span {
+    transition: margin-top 0.3s ease-out;
+    -moz-transition: margin-top 0.3s ease-out;
+    -webkit-transition: margin-top 0.3s ease-out;
+    -ms-transition: margin-top 0.3s ease-out;
+    margin-top: -10px;
+}
+
+#Servicos div#BlocoBloco_hovAzul span {
+    transition: margin-top 0.3s ease-in;
+    -moz-transition: margin-top 0.3s ease-in;
+    -webkit-transition: margin-top 0.3s ease-in;
+    -ms-transition: margin-top 0.3s ease-in;
+    margin-top: 0px;
+}
+
+#Servicos div#BlocoBloco_hovVermspan {
+    transition: margin-top 0.3s ease-in;
+    -moz-transition: margin-top 0.3s ease-in;
+    -webkit-transition: margin-top 0.3s ease-in;
+    -ms-transition: margin-top 0.3s ease-in;
+    margin-top: 0px;
+}
+
+
+/*icones serviços  assets/images/IconesServicos/TecAut/Consultoria.png */
+
+
+/*ICONES TECNOLOGIA E AUTO*/
+
+#Servicos span.ico_TecAut_Consult {
+    background: url(../images/IconesServicos/TecAut/Consultoria.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_AutInd {
+    background: url(../images/IconesServicos/TecAut/AutInd.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_AutRes {
+    background: url(../images/IconesServicos/TecAut/AutRes.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_BancoDados {
+    background: url(../images/IconesServicos/TecAut/BancoDados.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_DesApp {
+    background: url(../images/IconesServicos/TecAut/DesApp.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_MoniRemoto {
+    background: url(../images/IconesServicos/TecAut/MoniRemoto.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_SisWeb {
+    background: url(../images/IconesServicos/TecAut/SisWeb.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_TecAut_Website {
+    background: url(../images/IconesServicos/TecAut/Website.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+
+/*ICONES DE QUIM*/
+
+#Servicos span.ico_Quim_AnalQuim {
+    background: url(../images/IconesServicos/Quimica/AnaQuim.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_Quim_CapPluvias {
+    background: url(../images/IconesServicos/Quimica/Capluviais.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_Quim_PGRS {
+    background: url(../images/IconesServicos/Quimica/PGRS.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_Quim_TratEflu {
+    background: url(../images/IconesServicos/Quimica/TratEflu.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+
+/*ICONES DE CIVIL E ELE*/
+
+#Servicos span.ico_civil_InsEle {
+    background: url(../images/IconesServicos/Civil/InstEle.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_HidroSan {
+    background: url(../images/IconesServicos/Civil/InstHidro.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_cadEle {
+    background: url(../images/IconesServicos/Civil/CadasEle.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_refAmp {
+    background: url(../images/IconesServicos/Civil/RefAmp.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_EfiEner {
+    background: url(../images/IconesServicos/Civil/EfiEne.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_EstViab {
+    background: url(../images/IconesServicos/Civil/EstudoViabilidade.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_LevCad {
+    background: url(../images/IconesServicos/Civil/LevantamentoCadastral.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_ProjLumi {
+    background: url(../images/IconesServicos/Civil/ProjetoLumi.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_ProjAcess {
+    background: url(../images/IconesServicos/Civil/ProjetoAcessibilidade.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_civil_VisTec {
+    background: url(../images/IconesServicos/Civil/VistoriaTecnica.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+
+/*ICONES DE Produção*/
+
+#Servicos span.ico_prod_FMEA {
+    background: url(../images/IconesServicos/Producao/FMEA.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_prod_GesEstoque {
+    background: url(../images/IconesServicos/Producao/GestaodeEstoque.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_prod_5s {
+    background: url(../images/IconesServicos/Producao/5s.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_prod_MapOtiProc {
+    background: url(../images/IconesServicos/Producao/MapOtiPro.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_prod_Layout {
+    background: url(../images/IconesServicos/Producao/Layout.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_prod_NR12 {
+    background: url(../images/IconesServicos/Producao/NR12.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+
+/*ICONES DE Mecanica*/
+
+#Servicos span.ico_Mec_Modelagem {
+    background: url(../images/IconesServicos/Mec/Modelagem.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_Mec_DesnProdu {
+    background: url(../images/IconesServicos/Mec/Deseprodutos.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_Mec_Dimensiona {
+    background: url(../images/IconesServicos/Mec/DimensCalor.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico_Mec_EnsaioMec {
+    background: url(../images/IconesServicos/Mec/EnsaiosMec.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+
+/*ICONES pre*/
+
+#Servicos span.ico02 {
+    background: url(../images/img-ico02-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico03 {
+    background: url(../images/img-ico03-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico04 {
+    background: url(../images/img-ico04-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico05 {
+    background: url(../images/img-ico05-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico06 {
+    background: url(../images/img-ico06-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico07 {
+    background: url(../images/img-ico07-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico08 {
+    background: url(../images/img-ico08-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico09 {
+    background: url(../images/img-ico09-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#Servicos span.ico010 {
+    background: url(../images/img-ico015-@4x.png) no-repeat center;
+    background-size: 90px 90px;
+}
+
+#divbtncolaps {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 64em) {
+    #Servicos h4 {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 64em) {
+    #Servicos div#Bloco_hovAzul {
+        width: 80%;
+        height: auto;
+        padding-bottom: 30px;
+        float: left;
+        margin-left: 10% !important;
+        margin-right: -10%;
+    }
+    @media screen and (max-width: 64em) {
+        #divbtncolaps {
+            text-align: center;
+            margin: -5% auto 0px auto;
+            position: absolute;
+            left: 15.5%;
+        }
+        #divbtncolaps button#btn_vejamenos {
+            width: 90%;
+        }
+    }
+    #Servicos div#Bloco_hovVerm {
+        width: 80%;
+        height: auto;
+        padding-bottom: 30px;
+        float: left;
+        margin-left: 10% !important;
+        margin-right: -10%;
+    }
+}
+
+
+/*--------| Fim do CSS  |-----------*/
